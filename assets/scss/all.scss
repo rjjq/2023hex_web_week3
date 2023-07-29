@@ -1,0 +1,11 @@
+@import 'reset';
+@import 'base';
+
+@import 'variables';
+@import 'main';
+@import 'flex';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './pages/index.scss';

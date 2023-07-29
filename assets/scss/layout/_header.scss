@@ -1,0 +1,67 @@
+nav {
+  background-color: $primary-red;
+}
+
+.nav {
+  height: 80px;
+}
+
+.logo h1 a {
+    display: block;
+    width: 80px;
+    height: 48.57px;
+    background-image: url("../images/logo-white.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    // 隱藏文字
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu {
+  text-align: center;
+  gap: 64px;
+  font-size: 20px;
+  
+  a {
+    display: block;
+    color: $white;
+  }
+
+  a:hover {
+    color: gray;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .nav.container {
+    padding: 0;
+  }
+
+  .logo {
+    padding: 12px 0;
+    margin-left: 15px;
+  }
+
+  .menu {
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 16px;
+    gap: 0;
+  
+    li {
+      width: 50%;
+      border: 1px solid $white;
+      padding: 12px 0;
+    }
+  }
+  
+}
